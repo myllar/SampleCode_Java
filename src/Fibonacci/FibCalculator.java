@@ -10,6 +10,7 @@ public class FibCalculator {
         this.scanner = new Scanner(System.in);
     }
 
+
     // CALCULATE
     public void calculateFibonacci() {
         int n = 0;

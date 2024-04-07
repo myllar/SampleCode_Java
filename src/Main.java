@@ -17,23 +17,23 @@ public class Main {
                         "2. Stack operations. A modified exam answer.  \n" +
                         "3. Close application\n");
 
-            choice = userInput.next();
+                choice = userInput.next();
 
-            switch (choice) {
-                case "1":
-                    FibCalculator calculator = new FibCalculator();
-                    calculator.calculateFibonacci();
-                    break;
-                case "2":
-                    StackOperations stackOps = new StackOperations();
-                    stackOps.stackOperations(new String[0]);
-                    break;
-                case "3":
-                    System.out.println("Closing application. ");
-                    exitMenu = true;
-                    return;
-                default:
-                    System.out.println("Invalid choice, please select number 1, 2 or 3");
+                switch (choice) {
+                    case "1":
+                        FibCalculator calculator = new FibCalculator();
+                        calculator.calculateFibonacci();
+                        break;
+                    case "2":
+                        StackOperations stackOps = new StackOperations();
+                        stackOps.stackOperations(new String[0]);
+                        break;
+                    case "3":
+                        System.out.println("Closing application. ");
+                        exitMenu = true;
+                        break;
+                    default:
+                        System.out.println("Invalid choice, please select number 1, 2 or 3");
                 }
             }
 
